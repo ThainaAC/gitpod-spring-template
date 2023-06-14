@@ -8,13 +8,14 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table (name = "Jogos")
+@Table (name = "jogos")
 public class Jogo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String titulo;    
     private int anoDelancamento;
+    
     public int getAnoDelancamento() {
         return anoDelancamento;
     }

@@ -15,7 +15,7 @@ public class JogoController {
 
     @RequestMapping ("/list")
     public String list (Model model) {
-        model.addAttribute("jogo", JogoRepo.findAll());
+        model.addAttribute("jogos", JogoRepo.findAll());
         return "/jogo/list";   
     }
     @RequestMapping("/insert")
