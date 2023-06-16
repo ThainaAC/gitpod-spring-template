@@ -17,7 +17,7 @@ public class Jogo {
     private String titulo;
     private int anoDeLancamento;
 
-    //get e set do id
+ 
     public int getId() {
         return id;
     }
@@ -25,7 +25,7 @@ public class Jogo {
         this.id = id;
     }
 
-    //get e set do titulo
+   
     public String getTitulo() {
         return titulo;
     }
@@ -33,7 +33,7 @@ public class Jogo {
         this.titulo = titulo;
     }
 
-    //get e set do anoDeLancamento
+    
     public int getAnoDeLancamento() {
         return anoDeLancamento;
     }

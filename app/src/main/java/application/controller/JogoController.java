@@ -20,7 +20,7 @@ public class JogoController {
     private JogoRepository jogoRepo;
 
 
-    //Lista
+
     @RequestMapping("/list")
     public String list(Model model) {
         model.addAttribute("jogos", jogoRepo.findAll());
@@ -29,7 +29,7 @@ public class JogoController {
     }
 
 
-    //Insert
+    
     @RequestMapping("/insert")
     public String insert() {
 
@@ -49,7 +49,7 @@ public class JogoController {
         }
 
 
-    //Update
+
     @RequestMapping("/update")
     public String update(Model model, @RequestParam("id") int id) {
         Optional<Jogo> jogo = jogoRepo.findById(id);
@@ -82,7 +82,7 @@ public class JogoController {
         }
 
 
-    //Delete
+  
     @RequestMapping("/delete")
     public String delete(Model model, @RequestParam("id") int id) {
         Optional<Jogo> jogo = jogoRepo.findById(id);
